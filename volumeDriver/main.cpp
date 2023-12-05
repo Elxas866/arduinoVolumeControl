@@ -1,5 +1,9 @@
 #include <iostream>
 #include <windows.h>
+#include <mmdeviceapi.h>
+#include <endpointvolume.h>
+
+void alterSystemVolume(int mode);
 
 int main() {
     HANDLE serialPort = CreateFile(
@@ -45,6 +49,14 @@ int main() {
         if (ReadFile(serialPort, buffer, sizeof(buffer), &bytesRead, nullptr)) {
             std::string data = std::string(buffer, bytesRead);
             std::cout << "Gelesene Daten: " << data << std::endl;
+
+            if (data == "POS+") {
+                alterSystemVolume(1);
+            }else if (data == "POS-") {
+                alterSystemVolume(-1);
+            }else if (data == "CLIK") {
+                alterSystemVolume(0);
+            }
         } else {
             std::cerr << "Fehler beim Lesen vom seriellen Port." << std::endl;
             break;
@@ -55,4 +67,58 @@ int main() {
     CloseHandle(serialPort);
 
     return 0;
+}
+
+void alterSystemVolume(int mode) {
+    // Initialisieren Sie COM (Component Object Model)
+    CoInitialize(nullptr);
+
+    // Erhalten Sie den Audiogeräte-Manager
+    IMMDeviceEnumerator* deviceEnumerator = nullptr;
+    CoCreateInstance(__uuidof(MMDeviceEnumerator), nullptr, CLSCTX_ALL, __uuidof(IMMDeviceEnumerator), (void**)&deviceEnumerator);
+
+    // Erhalten Sie das Standard-Audiogerät (Wiedergabe)
+    IMMDevice* defaultDevice = nullptr;
+    deviceEnumerator->GetDefaultAudioEndpoint(eRender, eConsole, &defaultDevice);
+
+    // Erhalten Sie das Audio-Endpunkt-Volume-Objekt
+    IAudioEndpointVolume* endpointVolume = nullptr;
+    defaultDevice->Activate(__uuidof(IAudioEndpointVolume), CLSCTX_ALL, nullptr, (void**)&endpointVolume);
+
+    // Aktuelle Lautstärke erhalten
+    float currentVolume;
+    BOOL isMute;
+    endpointVolume->GetMute(&isMute);
+    endpointVolume->GetMasterVolumeLevelScalar(&currentVolume);
+
+    // Modi abfragen und entsprechende Aktionen ausführen
+    if (mode == 0) {
+        if (isMute == FALSE) {
+            endpointVolume->SetMute(TRUE, nullptr);
+            isMute = TRUE;
+        }else {
+            endpointVolume->SetMute(FALSE, nullptr);
+            isMute = FALSE;
+        }
+    }else {
+        float newVolume;
+        if (mode == 1) {
+            newVolume = currentVolume + 0.01;
+        }else if (mode == -1) {
+            newVolume = currentVolume - 0.01;
+        }
+        endpointVolume->SetMasterVolumeLevelScalar(newVolume, nullptr);
+    }
+
+
+    // Warten Sie einen Moment, um die Änderung zu bemerken
+    //Sleep(500);
+
+    // Aufräumen
+    defaultDevice->Release();
+    deviceEnumerator->Release();
+    endpointVolume->Release();
+
+    // Beenden Sie COM
+    CoUninitialize();
 }
