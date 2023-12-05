@@ -1,0 +1,3 @@
+C:/Users/Kelta/Desktop/Quickies/volume_ctrl/volumeDriver/cmake-build-release-visual-studio/CMakeFiles/volumeDriver.dir
+C:/Users/Kelta/Desktop/Quickies/volume_ctrl/volumeDriver/cmake-build-release-visual-studio/CMakeFiles/edit_cache.dir
+C:/Users/Kelta/Desktop/Quickies/volume_ctrl/volumeDriver/cmake-build-release-visual-studio/CMakeFiles/rebuild_cache.dir

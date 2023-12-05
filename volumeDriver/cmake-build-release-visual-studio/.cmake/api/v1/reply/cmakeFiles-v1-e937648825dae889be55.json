@@ -16,7 +16,7 @@
 		},
 		{
 			"isGenerated" : true,
-			"path" : "cmake-build-debug/CMakeFiles/3.25.2/CMakeSystem.cmake"
+			"path" : "cmake-build-release-visual-studio/CMakeFiles/3.25.2/CMakeSystem.cmake"
 		},
 		{
 			"isCMake" : true,
@@ -261,16 +261,11 @@
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "C:/Program Files/JetBrains/CLion 2022.2.4/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/GNU-FindBinUtils.cmake"
-		},
-		{
-			"isCMake" : true,
-			"isExternal" : true,
 			"path" : "C:/Program Files/JetBrains/CLion 2022.2.4/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeCCompiler.cmake.in"
 		},
 		{
 			"isGenerated" : true,
-			"path" : "cmake-build-debug/CMakeFiles/3.25.2/CMakeCCompiler.cmake"
+			"path" : "cmake-build-release-visual-studio/CMakeFiles/3.25.2/CMakeCCompiler.cmake"
 		},
 		{
 			"isCMake" : true,
@@ -505,16 +500,11 @@
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "C:/Program Files/JetBrains/CLion 2022.2.4/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/GNU-FindBinUtils.cmake"
-		},
-		{
-			"isCMake" : true,
-			"isExternal" : true,
 			"path" : "C:/Program Files/JetBrains/CLion 2022.2.4/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeCXXCompiler.cmake.in"
 		},
 		{
 			"isGenerated" : true,
-			"path" : "cmake-build-debug/CMakeFiles/3.25.2/CMakeCXXCompiler.cmake"
+			"path" : "cmake-build-release-visual-studio/CMakeFiles/3.25.2/CMakeCXXCompiler.cmake"
 		},
 		{
 			"isCMake" : true,
@@ -554,12 +544,12 @@
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "C:/Program Files/JetBrains/CLion 2022.2.4/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/GNU-C.cmake"
+			"path" : "C:/Program Files/JetBrains/CLion 2022.2.4/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/MSVC-C.cmake"
 		},
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "C:/Program Files/JetBrains/CLion 2022.2.4/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/GNU.cmake"
+			"path" : "C:/Program Files/JetBrains/CLion 2022.2.4/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/MSVC.cmake"
 		},
 		{
 			"isCMake" : true,
@@ -569,12 +559,12 @@
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "C:/Program Files/JetBrains/CLion 2022.2.4/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/Windows-GNU-C.cmake"
+			"path" : "C:/Program Files/JetBrains/CLion 2022.2.4/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/Windows-MSVC-C.cmake"
 		},
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "C:/Program Files/JetBrains/CLion 2022.2.4/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/Windows-GNU.cmake"
+			"path" : "C:/Program Files/JetBrains/CLion 2022.2.4/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/Windows-MSVC.cmake"
 		},
 		{
 			"isCMake" : true,
@@ -588,17 +578,12 @@
 		},
 		{
 			"isGenerated" : true,
-			"path" : "cmake-build-debug/CMakeFiles/3.25.2/CMakeRCCompiler.cmake"
+			"path" : "cmake-build-release-visual-studio/CMakeFiles/3.25.2/CMakeRCCompiler.cmake"
 		},
 		{
 			"isCMake" : true,
 			"isExternal" : true,
 			"path" : "C:/Program Files/JetBrains/CLion 2022.2.4/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeRCInformation.cmake"
-		},
-		{
-			"isCMake" : true,
-			"isExternal" : true,
-			"path" : "C:/Program Files/JetBrains/CLion 2022.2.4/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/Windows-windres.cmake"
 		},
 		{
 			"isCMake" : true,
@@ -667,12 +652,7 @@
 		},
 		{
 			"isGenerated" : true,
-			"path" : "cmake-build-debug/CMakeFiles/3.25.2/CMakeCCompiler.cmake"
-		},
-		{
-			"isCMake" : true,
-			"isExternal" : true,
-			"path" : "C:/Program Files/JetBrains/CLion 2022.2.4/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/Windows-GNU-C-ABI.cmake"
+			"path" : "cmake-build-release-visual-studio/CMakeFiles/3.25.2/CMakeCCompiler.cmake"
 		},
 		{
 			"isCMake" : true,
@@ -687,22 +667,27 @@
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "C:/Program Files/JetBrains/CLion 2022.2.4/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/GNU-CXX.cmake"
+			"path" : "C:/Program Files/JetBrains/CLion 2022.2.4/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/MSVC-CXX.cmake"
 		},
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "C:/Program Files/JetBrains/CLion 2022.2.4/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/GNU.cmake"
+			"path" : "C:/Program Files/JetBrains/CLion 2022.2.4/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/MSVC.cmake"
 		},
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "C:/Program Files/JetBrains/CLion 2022.2.4/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/Windows-GNU-CXX.cmake"
+			"path" : "C:/Program Files/JetBrains/CLion 2022.2.4/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/CMakeCommonCompilerMacros.cmake"
 		},
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "C:/Program Files/JetBrains/CLion 2022.2.4/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/Windows-GNU.cmake"
+			"path" : "C:/Program Files/JetBrains/CLion 2022.2.4/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/Windows-MSVC-CXX.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/JetBrains/CLion 2022.2.4/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/Windows-MSVC.cmake"
 		},
 		{
 			"isCMake" : true,
@@ -766,18 +751,13 @@
 		},
 		{
 			"isGenerated" : true,
-			"path" : "cmake-build-debug/CMakeFiles/3.25.2/CMakeCXXCompiler.cmake"
-		},
-		{
-			"isCMake" : true,
-			"isExternal" : true,
-			"path" : "C:/Program Files/JetBrains/CLion 2022.2.4/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/Windows-GNU-CXX-ABI.cmake"
+			"path" : "cmake-build-release-visual-studio/CMakeFiles/3.25.2/CMakeCXXCompiler.cmake"
 		}
 	],
 	"kind" : "cmakeFiles",
 	"paths" : 
 	{
-		"build" : "C:/Users/Kelta/Desktop/Quickies/volume_ctrl/volumeDriver/cmake-build-debug",
+		"build" : "C:/Users/Kelta/Desktop/Quickies/volume_ctrl/volumeDriver/cmake-build-release-visual-studio",
 		"source" : "C:/Users/Kelta/Desktop/Quickies/volume_ctrl/volumeDriver"
 	},
 	"version" : 
