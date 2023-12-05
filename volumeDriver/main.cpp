@@ -90,7 +90,6 @@ void alterSystemVolume(int mode) {
     BOOL isMute;
     endpointVolume->GetMute(&isMute);
     endpointVolume->GetMasterVolumeLevelScalar(&currentVolume);
-    std::cout << "Current Volume: " << currentVolume << std::endl;
 
     // Modi abfragen und entsprechende Aktionen ausführen
     if (mode == 0) {
@@ -110,6 +109,8 @@ void alterSystemVolume(int mode) {
         }
         endpointVolume->SetMasterVolumeLevelScalar(newVolume, nullptr);
     }
+    endpointVolume->GetMasterVolumeLevelScalar(&currentVolume);
+    std::cout << "Current Volume: " << currentVolume << std::endl;
 
 
     // Warten Sie einen Moment, um die Änderung zu bemerken
