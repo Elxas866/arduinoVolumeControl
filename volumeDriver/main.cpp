@@ -54,7 +54,7 @@ int main() {
                 alterSystemVolume(1);
             }else if (data == "POS-") {
                 alterSystemVolume(-1);
-            }else if (data == "CLIK") {
+            }else if (data == "PUSH") {
                 alterSystemVolume(0);
             }
         } else {
@@ -90,6 +90,7 @@ void alterSystemVolume(int mode) {
     BOOL isMute;
     endpointVolume->GetMute(&isMute);
     endpointVolume->GetMasterVolumeLevelScalar(&currentVolume);
+    std::cout << "Current Volume: " << currentVolume << std::endl;
 
     // Modi abfragen und entsprechende Aktionen ausführen
     if (mode == 0) {
